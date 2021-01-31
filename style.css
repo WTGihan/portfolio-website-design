@@ -3,6 +3,7 @@
     font-family: 'Poppins', sans-serif;
     padding: 0;
     margin: 0;
+    /* font: 18px/24px 'opensans-bold', sans-serif */
 }
 
 body {
@@ -40,6 +41,7 @@ img {
 section {
     scroll-behavior: smooth;
     transition: 0.5s ease;
+    display: block;
 }
 
 .nav {
@@ -188,8 +190,7 @@ i {
     /* height: 100%; */
     object-fit: cover;
     object-position: 50% 3%; /* default value: image is centered*/
-    /* object-position: 0 0;  */
-    /* margin-top: 10px; */
+    
 }
 
 
@@ -273,3 +274,80 @@ i {
     margin-right: 10px;
 }
 
+#resume {
+    background: #ffffff;
+    padding-top: 90px;
+    padding-bottom: 72px;
+    /* margin-top: 20px; */
+    margin-bottom: 48px;
+    display: block;
+}
+.rowresume {
+    /* display: block; */
+    margin: 0 auto;
+    width: 96%;
+    max-width: 1020px;
+    border-bottom: 1px solid #E8E8E8;
+    margin-bottom: 45px;
+    /* text-align: center; */
+}
+
+#resume h1 span {
+    padding-bottom: 6px;
+    border-bottom: 3px solid #11ABB0;;
+}
+
+.education {
+    display: inline-block;
+    width: 100%;
+    /* border-bottom: 1px solid #E8E8E8; */
+    /* vertical-align: top; */
+}
+
+.education > h1 {
+    display:  block;
+    width: 26%;
+    float: left;
+    padding: 0 20px;
+    min-height: 1px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #313131;
+    margin-bottom: 12px;
+    font: 18px/24px 'opensans-bold', sans-serif;
+}
+
+.education > h1 > span {
+    font-size: 23px;
+}
+
+.edudetails {
+    display: block;
+    width: 66%;
+    float: right;
+    margin-bottom: 20px;
+}
+
+.edudetails > h3 {
+    font: 25px/30px 'opensans-bold', sans-serif;
+    font-weight: 600;
+    color: #313131;
+    margin-bottom: 12px;
+    font-size: 25px;
+    line-height: 20px;
+}
+
+.eduinfo {
+    font: 16px/24px 'librebaskerville-italic', serif;
+    font-style: italic;
+    color: #6E7881;
+    margin-bottom: 18px;
+    margin-top: 9px;
+    font-size: 20px;
+}
+
+.eduinit {
+    margin: 0 0 30px 0;
+    font-size: 17px;
+    color: #9ea5ab;
+}
