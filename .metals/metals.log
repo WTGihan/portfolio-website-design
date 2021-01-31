@@ -1,0 +1,10 @@
+[0m2021.01.30 16:05:09 INFO  Started: Metals version 0.9.10 in workspace 'A:\WolfXCodeLab\Portfolio' for client vscode 1.52.1.[0m
+[0m2021.01.30 16:05:15 INFO  time: initialize in 5.49s[0m
+[0m2021.01.30 16:05:18 WARN  Build server is not auto-connectable.[0m
+[0m2021.01.30 16:05:18 WARN  no build tool detected in workspace 'A:\WolfXCodeLab\Portfolio'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. [0m
+Jan 30, 2021 5:09:04 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTraceNotification
+[0m2021.01.31 18:12:55 INFO  Started: Metals version 0.9.10 in workspace 'A:\WolfXCodeLab\Portfolio' for client vscode 1.52.1.[0m
+[0m2021.01.31 18:12:59 INFO  time: initialize in 4.21s[0m
+[0m2021.01.31 18:13:08 WARN  Build server is not auto-connectable.[0m
+[0m2021.01.31 18:13:08 WARN  no build tool detected in workspace 'A:\WolfXCodeLab\Portfolio'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. [0m
