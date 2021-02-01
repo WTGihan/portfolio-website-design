@@ -28,6 +28,7 @@ header {
 
 li {
     list-style: none;
+    margin-right: 5px;
 }
 
 img {
@@ -97,10 +98,17 @@ section {
     color: #000000;
     background-color: aliceblue;
     border-radius: 300px;
-    padding: 1px 13px;
-
+    padding: 0px 13px;
+    transition:width 0.1s ease-in;
 }
 
+.navbar > li > .activenav  {
+    color: #000000;
+    background-color: aliceblue;
+    border-radius: 300px;
+    padding: 2px 13px;
+    transition:width 0.1s ease-in;
+}
 
 
 .banner {
@@ -277,9 +285,9 @@ i {
 #resume {
     background: #ffffff;
     padding-top: 90px;
-    padding-bottom: 72px;
+    /* padding-bottom: 72px; */
     /* margin-top: 20px; */
-    margin-bottom: 48px;
+    /* margin-bottom: 48px; */
     display: block;
 }
 .rowresume {
@@ -290,6 +298,14 @@ i {
     border-bottom: 1px solid #E8E8E8;
     margin-bottom: 45px;
     /* text-align: center; */
+}
+
+.rowresumeskills {
+    margin: 0 auto;
+    width: 96%;
+    max-width: 1020px;
+    /* border-bottom: 1px solid #E8E8E8; */
+    margin-bottom: 45px;
 }
 
 #resume h1 span {
@@ -479,3 +495,24 @@ i {
     }
 }
 
+#projects {
+    background: #ebeeee;
+    padding-top: 90px;
+    padding-bottom: 72px;
+    /* margin-top: 20px; */
+    margin-bottom: 48px;
+    display: block;
+}
+
+#projects h1 span {
+    padding-bottom: 6px;
+    border-bottom: 3px solid #11ABB0;;
+}
+
+.edudetails h3 span {
+    margin-left: -17px;
+    margin-right: 4px;
+}
+.eduinit a {
+    color: #201e1e;
+}

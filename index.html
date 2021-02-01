@@ -12,13 +12,13 @@
 </head>
 <body>
     <header id="home">
-        <div class="nav">
+        <div class="nav" id="myDiv">
             <ul class="navbar">
-                <li><a href="#home"> Home</a></li>
-                <li><a href="#about"> About</a></li>
-                <li><a href="#resume">Resume</a></li>
-                <li><a href="#">Works</a></li>
-                <li><a href="#">Testimonals</a></li>
+                <li><a href="#home" id="homenav"> Home</a></li>
+                <li><a href="#about" id="aboutnav"> About</a></li>
+                <li><a href="#resume" id="resumenav">Resume</a></li>
+                <li><a href="#projects" id="projectsnav">Projects</a></li>
+                <!-- <li><a href="#">Testimonals</a></li> -->
                 <li><a href="#">Contact</a></li>
             </ul>
         </div>
@@ -135,7 +135,7 @@
                 </div>
             </div>
         </div>
-        <div class="rowresume">
+        <div class="rowresumeskills">
             <div class="education">
                 <h1><span>Skills</span></h1>
                 <div class="edudetails">
@@ -177,6 +177,29 @@
         
     </section>
 
+    <section id="projects">
+        <div class="rowresume">
+            <div class="education">
+                <h1><span>Projects</span></h1>
+                <div class="edudetails">
+                    <h3><span>&#8226;</span>Hotel Mangement System</h3>
+                    <p class="eduinfo">HTML CSS and PHP languages use for development #OnGoing </p>
+                    <p class="eduinit">chck this out <a href="http://">Bayfront Hotel Mangement System</a></p>
+                </div>
+                <div class="edudetails">
+                    <h3><span>&#8226;</span>Intern Mangement System</h3>
+                    <p class="eduinfo">HTML CSS and Java languages use for development #OnGoing</p>
+                    <p class="eduinit">chck this out <a href="http://">Campus Intern Mangement System</a></p>
+                </div>
+                <div class="edudetails">
+                    <h3><span>&#8226;</span>Portfolio Web Site</h3>
+                    <p class="eduinfo">HTML CSS Javascript and jQuery languages use for development #OnGoing</p>
+                    <p class="eduinit">chck this out <a href="http://">Portfolio Web Site Design</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
 
 
 
@@ -184,7 +207,7 @@
         window.addEventListener("scroll", function() {
             var nav = document.querySelector(".nav");
             
-            console.log(window.scrollY);
+            // console.log(window.scrollY);
             if(window.scrollY >= 694) {
                 nav.classList.add("sticky");
             }
@@ -218,11 +241,68 @@
            
                 // Add hash (#) to URL when done scrolling (default click behavior)
                 window.location.hash = hash;
+                // console.log(window.location.hash);
               });
             } // End if
           });
         });
+        
         </script>
+
+        <script>
+            $(document).scroll(function () {
+                $('section').each(function () {
+                    if($(this).position().top <= $(document).scrollTop() && ($(this).position().top + $(this).outerHeight()) > $(document).scrollTop()) {
+                        var activenav = $(this).attr('id');
+                        console.log(activenav);
+                        
+                        if(activenav == "about") {
+                            document.getElementById("aboutnav").classList.add("activenav");
+                            document.getElementById("resumenav").classList.remove("activenav");
+                            document.getElementById("projectsnav").classList.remove("activenav");
+                            // document.getElementById("contactnav").classList.remove("activenav");
+                            // activenav = "home";
+                            // console.log("1Hello");
+                        }
+                        if(activenav == "resume") {
+                            document.getElementById("resumenav").classList.add("activenav");
+                            document.getElementById("aboutnav").classList.remove("activenav");
+                            document.getElementById("projectsnav").classList.remove("activenav");
+                            // document.getElementById("contactnav").classList.remove("activenav");
+                            // activenav = "home";
+                            // console.log("2Hello");
+                        }
+                        if(activenav == "projects") {
+                            document.getElementById("projectsnav").classList.add("activenav");
+                            // document.getElementById("contactnav").classList.remove("activenav");
+                            document.getElementById("aboutnav").classList.remove("activenav");
+                            document.getElementById("resumenav").classList.remove("activenav");
+                            // activenav = "home";
+                            // console.log("3Hello");
+                        }
+                    }
+                });
+            });
+            $(document).scroll(function () {
+                $('header').each(function () {
+                    if($(this).position().top <= $(document).scrollTop() && ($(this).position().top + $(this).outerHeight()) > $(document).scrollTop()) {
+                        var activenav = $(this).attr('id');
+                        console.log(activenav);
+                        
+                        if(activenav == "home") {
+                            document.getElementById("aboutnav").classList.remove("activenav");
+                            document.getElementById("resumenav").classList.remove("activenav");
+                            document.getElementById("projectsnav").classList.remove("activenav");
+                            // document.getElementById("contactnav").classList.remove("activenav");
+                            // activenav = "home";
+                            // console.log("1Hello");
+                        }
+                        
+                    }
+                });
+            });
+        </script>
+        
     
 </body>
 </html>
