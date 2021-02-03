@@ -286,7 +286,7 @@ i {
     background: #ffffff;
     padding-top: 90px;
     /* padding-bottom: 72px; */
-    /* margin-top: 20px; */
+    margin-top: 20px;
     /* margin-bottom: 48px; */
     display: block;
 }
@@ -499,8 +499,8 @@ i {
     background: #ebeeee;
     padding-top: 90px;
     padding-bottom: 72px;
-    /* margin-top: 20px; */
-    margin-bottom: 48px;
+    margin-top: 20px;
+    /* margin-bottom: 48px; */
     display: block;
 }
 
@@ -515,4 +515,131 @@ i {
 }
 .eduinit a {
     color: #201e1e;
+}
+
+
+#contact {
+    background: #0f1013;
+    padding-top: 90px;
+    padding-bottom: 72px;
+    /* margin-top: 20px; */
+    /* margin-bottom: 48px; */
+    /* max-width: 1020px; */
+    display: block;
+}
+.contactform {
+    display: block;
+    margin-top: 20px;
+}
+
+.emailicon {
+    /* background-color: #11ABB0; */
+    color: #E8E8E8;
+    /* padding-top: 90px; */
+    width: 96%;
+    max-width: 1020px;
+    margin: 0 auto;
+    margin-bottom: 80px;
+}
+
+.emailicon h1 {
+    width: 16%;
+}
+.contactdata {
+    width: 96%;
+    max-width: 1020px;
+    margin: 0 auto;
+    display: flex;
+}
+.form {
+    color: #E8E8E8;
+    width: 72%;
+    /* max-width: 1020px; */
+    /* margin: 0 auto; */
+    display: inline-block;
+}
+
+.formrow {
+    width: 87%;
+    display: inline-block;
+}
+
+#contact label {
+    display: block;
+    float: left;
+    width: 25%;
+    margin: 12px 0;    
+    font-size: 18px;
+    /* font-variant: small-caps; */
+    font-weight: 400;
+}
+
+#contact input {
+    padding: 18px 20px;
+    color: #eee;
+    background: #373233;
+    margin-bottom: 42px;
+    border: 0;
+    outline: none;
+    font-size: 15px;
+    line-height: 24px;
+    width: 66%;
+}
+
+#contact textarea {
+    padding: 18px 20px;
+    color: #eee;
+    background: #373233;
+    margin-bottom: 42px;
+    border: 0;
+    outline: none;
+    font-size: 15px;
+    line-height: 24px;
+    width: 66%;
+}
+
+#contact button {
+    padding: 18px 20px;
+    color: #eee;
+    background: #0a090a;
+    margin-bottom: 42px;
+    border: 0;
+    outline: none;
+    font-size: 22px;
+    line-height: 24px;
+    width: 22%;
+    text-transform: uppercase;
+    cursor: pointer;
+    letter-spacing: 4px;
+    font-weight: 500;
+}
+
+aside {
+    width: 26%;
+    /* background: #11ABB0; */
+    display: inline-block;
+    height: fit-content;
+}
+
+.contactaddress {
+    background: transparent;
+}
+
+#contact aside h4 {
+    font-size: 20px;
+    line-height: 23px;
+    font-weight: 500;
+    /* font-style: bold; */
+    color: #EBEEEE;
+    margin-bottom: 6px;
+    letter-spacing: 1px;
+}
+
+.addressdetails {
+    margin-bottom: 30px;
+    color: #ebeeee75;
+    line-height: 10px;
+    font-size: 17px;
+    line-height: 33px;
+    font-weight: 200;
 }

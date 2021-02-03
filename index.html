@@ -19,7 +19,7 @@
                 <li><a href="#resume" id="resumenav">Resume</a></li>
                 <li><a href="#projects" id="projectsnav">Projects</a></li>
                 <!-- <li><a href="#">Testimonals</a></li> -->
-                <li><a href="#">Contact</a></li>
+                <li><a href="#contact" id="contactnav">Contact</a></li>
             </ul>
         </div>
         <!-- <br> -->
@@ -200,6 +200,59 @@
         </div>
     </section>
 
+    <section id="contact">
+        <div class="contactform">
+            <div class="emailicon">
+                <h1><span><i class="fa fa-envelope fa-3x"></i></span></h1>
+            </div>
+            <div class="contactdata">
+                <div class="form">
+                    <form action="#">
+                        <div class="formrow">
+                            <label for="#">Name *</label>
+                            <input type="text">
+                        </div>
+                        <div class="formrow">
+                            <label for="#">Email *</label>
+                            <input type="email">
+                        </div>
+                        <div class="formrow">
+                            <label for="#">Subject </label>
+                            <input type="text">
+                        </div>
+                        <div class="formrow">
+                            <label for="#">Message *</label>
+                            <!-- <input type="textarea"> -->
+                            <textarea name="message" id="" cols="30" rows="10"></textarea>
+                        </div>
+                        <div class="formrow">
+                            <label for="#"></label>
+                            <!-- <input type="textarea"> -->
+                            <button type="submit">Submit</button>
+                        </div>
+                    </form>
+                </div>
+                <aside class="contactaddress">
+                    <h4>Address and Phone</h4>
+                    <p class="addressdetails">
+                        Tharindu Gihan
+                        <br>
+                        Gonapura Poddala 
+                        <br>
+                        Galle, Sri Lanka
+                        <br>
+                        +94 778522736
+                        <br>
+                    </p>
+                </aside>
+            </div>
+        </div>
+        
+        
+    </section>
+
+
+
 
 
 
@@ -260,26 +313,31 @@
                             document.getElementById("aboutnav").classList.add("activenav");
                             document.getElementById("resumenav").classList.remove("activenav");
                             document.getElementById("projectsnav").classList.remove("activenav");
-                            // document.getElementById("contactnav").classList.remove("activenav");
-                            // activenav = "home";
-                            // console.log("1Hello");
+                            document.getElementById("contactnav").classList.remove("activenav");
+                            
                         }
                         if(activenav == "resume") {
                             document.getElementById("resumenav").classList.add("activenav");
                             document.getElementById("aboutnav").classList.remove("activenav");
                             document.getElementById("projectsnav").classList.remove("activenav");
-                            // document.getElementById("contactnav").classList.remove("activenav");
-                            // activenav = "home";
-                            // console.log("2Hello");
+                            document.getElementById("contactnav").classList.remove("activenav");
+                            
                         }
                         if(activenav == "projects") {
                             document.getElementById("projectsnav").classList.add("activenav");
-                            // document.getElementById("contactnav").classList.remove("activenav");
+                            document.getElementById("contactnav").classList.remove("activenav");
                             document.getElementById("aboutnav").classList.remove("activenav");
                             document.getElementById("resumenav").classList.remove("activenav");
-                            // activenav = "home";
-                            // console.log("3Hello");
+                            
                         }
+                        if(activenav == "contact") {
+                            document.getElementById("contactnav").classList.add("activenav");
+                            document.getElementById("aboutnav").classList.remove("activenav");
+                            document.getElementById("resumenav").classList.remove("activenav");
+                            document.getElementById("projectsnav").classList.remove("activenav");
+                            
+                        }
+
                     }
                 });
             });
@@ -287,15 +345,13 @@
                 $('header').each(function () {
                     if($(this).position().top <= $(document).scrollTop() && ($(this).position().top + $(this).outerHeight()) > $(document).scrollTop()) {
                         var activenav = $(this).attr('id');
-                        console.log(activenav);
+                        // console.log(activenav);
                         
                         if(activenav == "home") {
                             document.getElementById("aboutnav").classList.remove("activenav");
                             document.getElementById("resumenav").classList.remove("activenav");
                             document.getElementById("projectsnav").classList.remove("activenav");
-                            // document.getElementById("contactnav").classList.remove("activenav");
-                            // activenav = "home";
-                            // console.log("1Hello");
+                            
                         }
                         
                     }
