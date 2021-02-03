@@ -183,19 +183,20 @@
                 <h1><span>Projects</span></h1>
                 <div class="edudetails">
                     <h3><span>&#8226;</span>Hotel Mangement System</h3>
-                    <p class="eduinfo">HTML CSS and PHP languages use for development #OnGoing </p>
+                    <p class="eduinfo">HTML CSS and PHP technologies use for development #OnGoing </p>
                     <p class="eduinit">chck this out <a href="http://">Bayfront Hotel Mangement System</a></p>
                 </div>
                 <div class="edudetails">
                     <h3><span>&#8226;</span>Intern Mangement System</h3>
-                    <p class="eduinfo">HTML CSS and Java languages use for development #OnGoing</p>
+                    <p class="eduinfo">HTML CSS and Java technologies use for development #OnGoing</p>
                     <p class="eduinit">chck this out <a href="http://">Campus Intern Mangement System</a></p>
                 </div>
                 <div class="edudetails">
                     <h3><span>&#8226;</span>Portfolio Web Site</h3>
-                    <p class="eduinfo">HTML CSS Javascript and jQuery languages use for development #OnGoing</p>
+                    <p class="eduinfo">HTML CSS Javascript and jQuery technologies use for development #OnGoing</p>
                     <p class="eduinit">chck this out <a href="http://">Portfolio Web Site Design</a></p>
                 </div>
+                
             </div>
         </div>
     </section>
@@ -251,6 +252,39 @@
         
     </section>
 
+    <footer>
+        <div class="itemfooter">
+            <div class="social">
+                <ul>
+                    <li class="item">
+                        <a href="#">
+                            <i class="fa fa-facebook fa-2x"></i>
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a href="#">
+                            <i class="fa fa-instagram fa-2x"></i>
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a href="#">
+                            <i class="fa fa-linkedin fa-2x"></i>
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a href="#">
+                            <i class="fa fa-github fa-2x"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="itemfooterdetail">
+                <p>Modified and Developed with love by the <span>WolfXCode Lab team ♥️</span></p>
+                <!-- <br> -->
+                <p>© All credit goes to Tim Baker - Copyright 2017 Tim Baker  <span>&#8226;</span> Design by <span>Styleshout</span></p>
+            </div>
+        </div>
+    </footer>
 
 
 
@@ -271,7 +305,9 @@
             // nav.classList.toggle("sticky", window.scrollByPages(1););
             
         })
+        // console.log(window.location.href);
     </script>
+
     <!-- Window scrool function in jquery -->
     <script>
         $(document).ready(function(){
@@ -303,9 +339,11 @@
         </script>
 
         <script>
+            
             $(document).scroll(function () {
                 $('section').each(function () {
                     if($(this).position().top <= $(document).scrollTop() && ($(this).position().top + $(this).outerHeight()) > $(document).scrollTop()) {
+                       
                         var activenav = $(this).attr('id');
                         console.log(activenav);
                         
@@ -332,9 +370,10 @@
                         }
                         if(activenav == "contact") {
                             document.getElementById("contactnav").classList.add("activenav");
+                            document.getElementById("projectsnav").classList.remove("activenav");
                             document.getElementById("aboutnav").classList.remove("activenav");
                             document.getElementById("resumenav").classList.remove("activenav");
-                            document.getElementById("projectsnav").classList.remove("activenav");
+                            
                             
                         }
 
@@ -358,6 +397,7 @@
                 });
             });
         </script>
+
         
     
 </body>
