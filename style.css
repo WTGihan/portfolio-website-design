@@ -182,6 +182,15 @@ i {
     display: flex;
 }
 
+#godown {
+    position: absolute;
+    top: 660px;
+    left: 50%;
+    margin-left: -30px;
+    font-size: 35px;
+    margin-bottom: 30px;
+}
+
 .row {
     width: 96%;
     margin: 0 auto;
@@ -583,7 +592,7 @@ i {
 #contact input {
     padding: 18px 20px;
     color: #eee;
-    background: #373233;
+    background: #151414;
     margin-bottom: 42px;
     border: 0;
     outline: none;
@@ -595,7 +604,7 @@ i {
 #contact textarea {
     padding: 18px 20px;
     color: #eee;
-    background: #373233;
+    background: #151414;
     margin-bottom: 42px;
     border: 0;
     outline: none;
@@ -672,6 +681,7 @@ footer .social {
    width: 96%;
    min-width: 1020px;
    margin: 0 auto; 
+   margin-top: 30px;
 }
 
 .social i {
@@ -691,4 +701,18 @@ footer .social {
 
 .itemfooterdetail > p > span{
     color: #ffffff8f;
+}
+
+#gotop {
+    position: absolute;
+    top: -24px;
+    left: 50%;
+    margin-left: -30px;
+    font-size: 35px;
+    margin-bottom: 30px;
+}
+
+#gotop a i {
+    cursor: pointer;
+    /* font-size: 24px; */
 }
