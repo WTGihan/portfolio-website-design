@@ -184,12 +184,18 @@ i {
 
 #godown {
     position: absolute;
-    top: 660px;
+    top: 573px;
     left: 50%;
     margin-left: -30px;
     font-size: 35px;
     margin-bottom: 30px;
 }
+
+#godown a i {
+    cursor: pointer;
+    /* font-size: 24px; */
+}
+
 
 .row {
     width: 96%;
